@@ -1,0 +1,87 @@
+<html>   
+<html>
+    <head>
+        <script>
+            function validate_form(){
+                var letters = /^[A-Za-z]+$/;
+                var alphaN_letters = /^[0-9a-zA-Z]+$/;
+                var numbers = /^[0-9]+$/;
+
+                var uname = document.emp.emp_name
+                var empno = emp.num
+                var address = emp.S2
+                var contactno = emp.contact
+
+            if(uname.value.length<=0)
+                {
+                    alert("Enter Address")
+                    address.focus();
+                    return false
+                }
+                
+                if(!uname.value.match(letters))
+                {
+                    alert('Username must have alphabet characters only');
+                    uname.focus();
+                    return false;
+                }
+
+                if(!empno.value.match(alphaN_letters))
+                {
+                    alert('Emp No must have Alpha Numeric only');
+                    empno.focus();
+                    return false;
+                }
+
+                if(!contactno.value.match(numbers))
+                {
+                    alert('Contact Number must be numeric only');
+                    contactno.focus();
+                    return false;
+                }
+          
+                if(!address.value.match(alphaN_letters))
+                {
+                    alert('Address should be alpha numeric');
+                    address.focus();
+                    return false;
+                }
+
+                if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emp.email_id.value)))
+                 {
+                    alert("You have entered an invalid email address!")
+                   return (false)
+                 }
+
+        }
+        </script>
+    </head>
+<body>
+<h1 align=center>EMPLOYEE DETAILS</h1>
+<table border=1 align = center>
+            <form name="emp" action="" onsubmit="return validate_form();" method="post">
+        <tr><td>Employee Name: </td><td>
+                    <input type="text" value="" name="emp_name" size="24" required></td></tr>
+        <tr><td>Employee Number:</td><td><input type="text" value="" name="num" size="24" required></td></tr>                    
+   <tr><td>Address:</td><td>
+            <textarea rows="4" maxlen="200" name="S2" cols="20"></textarea></td></tr>
+    <tr><td>Contact Number:</td><td>
+            <input type="text" value="" name="contact" size="24" required></td></tr>
+      <tr><td>Job Location:</td><td>
+            <select name="mydropdown">
+                <option value="Default">Default</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Pune">Pune</option>
+                <option value="Mysore">Mysore</option>
+                <option value="Chandigarh">Chandigarh</option>
+         </select></td></tr>
+     <tr><td>Email:</td><td>
+               <input type="text" value="" name="email_id" size="24" required></td></tr>
+
+            <tr><td><input type="submit" value="  Submit" name="B4">
+                <input type="reset" value="  Reset All   " name="B5"></td></tr>
+    </form>
+</table>
+  </body>
+</html>

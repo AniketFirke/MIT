@@ -1,0 +1,71 @@
+interface Payable
+{
+    public double getPayment();
+}
+class Invoice implements Payable
+{
+    private String partNo;
+    private String partDesc;
+    private int qty;
+    private double ratePerUnit;
+
+    Invoice(String pNo, String Desc, int q, double rate)
+    {
+      partNo=pNo;
+      partDesc=Desc;
+      qty=q;
+      ratePerUnit=rate;
+    }
+    public String toString()
+    {
+      return String.format("%s: %s\n %s: %s\n %s: %d\n %s:%.2f", "partNumber",partNo,"part Desc", partDesc, "Quantity",qty,
+"Rate per Unit",ratePerUnit);
+    }
+    public double getPayment()
+    {
+      double pay=(double)qty*ratePerUnit;
+      return (pay);
+    }
+}
+class Employee implements Payable
+{
+    private String empName;
+    private String empNo;
+    private double weeklySal;
+    
+    Employee(String name, String No, double Sal)
+    {
+         empName=name;
+      empNo=No;
+      weeklySal=Sal;
+    }
+    public double getPayment()
+    {
+      return 4*weeklySal;
+    }
+    public String toString()
+    {
+      return String.format("%s: %s\n %s: %s\n %s: %.2f","Employee Name: ",empName,"Employee No: ",empNo,"Weekly Salary: ",weeklySal);
+    }
+}
+
+
+// Interface Test Class containing main method
+public class Test_Interface
+{
+    public static void main(String[] args)
+    {
+        Payable[] objects=new Payable[4];
+        
+        objects[0]=new Invoice("P1001","RC Toy",1000,1200.8f);
+        objects[1]=new Invoice("P1002","Camera Drone",100,9200.4f);
+        objects[2]=new Employee("Aniket","EMP101",80000f);
+        objects[3]=new Employee("Affan","EMP102",100000f);
+        
+        for(Payable obj: objects)
+        {
+            System.out.println("Details :\n"+obj);
+            System.out.println("Payment= "+obj.getPayment());
+        }
+    }
+}

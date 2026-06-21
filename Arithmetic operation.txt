@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arithmetic Operations</title>
+    <script>
+        function calculate()
+        {
+            var opr=document.getElementById("opr").value;
+            var num1=parseInt(document.getElementById("num1").value);
+            var num2=parseInt(document.getElementById("num2").value);
+            if(opr=="add")      
+                document.getElementById("result").value=num1+num2;
+            else if(opr=="sub")
+                document.getElementById("result").value=num1-num2;      
+            else if(opr=="mul")
+                document.getElementById("result").value=num1*num2;
+            else if(opr=="div")
+                document.getElementById("result").value=num1/num2;
+            else if(opr=="mod")
+                document.getElementById("result").value=num1%num2;              
+            else if(opr=="prime")
+            {
+                    var flag=1;
+                    for(var i=2;i<num1;i++){
+                        if(num1%i==0) 
+                        {
+                            flag=0;
+                            alert("number is not prime");
+                            //break;
+                        }
+                    }
+                    if(flag==1)
+                        alert("number is prime");
+            }   
+        }
+        function strlen(str)
+        {
+            var str= parseInt(document.getElementById("str").value);
+            var count=0;
+            var i=0;
+            while(str[count]!==undefined)
+            {
+                count++;
+            }
+            document.write("<br>length of string:",str,"=",count)
+        }
+    </script>
+</head>
+<body>
+    Result:<input type=text id="result"><br>
+
+    Enter num1<input type="text" id="num1"><br>
+    Enter num2<input type="text" id="num2"><br>
+    <select id="opr" onchange="calculate()">
+        <option value="add">+</option>
+        <option value="sub">-</option>
+        <option value="mul">*</option>
+        <option value="div">/</option>
+        <option value="mod">%</option>
+        <option value="prime">Prime No</option>
+    </select><br>
+    Enter a string: <input type="text"id="str"><br>
+        <input type="button" value="Length of String" onclick="strlen()">
+        <input type="reset"> 
+</body>
+</html>

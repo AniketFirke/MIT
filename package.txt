@@ -1,0 +1,28 @@
+// Package created in MyFunctions class
+package myPack;
+public class MyFunctions
+{
+	public boolean IsEven(int num)
+	{
+		if(num%2==0)
+			return true;
+		else
+			return false;
+	}
+}
+
+// Sample class containing MyFunctions class 
+import myPack.MyFunctions;
+import java.util.Scanner;
+public class sample
+{
+  public static void main(String[] args)
+ {
+ 	Scanner sc=new Scanner(System.in);
+	int a1;
+	System.out.println("Enter a Number: ");
+	a1=sc.nextInt();
+	MyFunctions my1=new MyFunctions();
+	System.out.println("Is number "+a1+"Even?" +my1.IsEven(a1));
+  }
+}

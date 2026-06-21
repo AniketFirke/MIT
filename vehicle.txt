@@ -1,0 +1,14 @@
+
+public class vehicle
+{
+    final int speedlimit=60;
+    void controlspeed()
+    {
+        speedlimit=150;
+    }
+    public static void main(String []args)
+    {
+        vehicle obj=new vehicle();
+        obj.controlspeed();
+    }
+}
