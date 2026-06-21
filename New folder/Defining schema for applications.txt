@@ -1,0 +1,25 @@
+1. Database Schema
+	A database schema describes the tables and corresponding fields contained in a database.
+	Database schemas may also include comments that describe the purpose of each table and individual fields.
+
+2. XML Schema
+	An XML schema defines the elements that an XML file may contain. It provides a specific structure for XML data, which is important when sharing XML files between 	multiple systems.
+	
+
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="[url of a webpage that describes the schema]">
+
+  <xs:element name="email">
+    <xs:complexType>,
+      <xs:sequence>
+        <xs:element name="to" type="xs:string"/>
+        <xs:element name="from" type="xs:string"/>
+        <xs:element name="subject" type="xs:string"/>
+        <xs:element name="body" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
+
+A software developer may use a schema to describe the structure of a file format used by an application.

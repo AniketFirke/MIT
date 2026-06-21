@@ -1,0 +1,81 @@
+Introduction
+Completed
+100 XP
+3 minutes
+Suppose you want to help your team understand the latest artificial intelligence (AI) innovations in the news. Your team would like to evaluate the opportunities these innovations support and understand what is done to keep AI advancements ethical.
+
+You share with your team that today, stable AI models are regularly put into production and used commercially around the world. For example, Microsoft's existing Azure AI services have been handling the needs of businesses for many years to date. In 2022, OpenAI, an AI research company, created a chatbot known as ChatGPT and an image generation application known as DALL-E. These technologies were built with AI models which can take natural language input from a user and return a machine-created human-like response.
+
+You share with your team that Azure OpenAI Service enables users to build enterprise-grade solutions with OpenAI models. With Azure OpenAI, users can summarize text, get code suggestions, generate images for a web site, and much more. This module dives into these capabilities.
+
+Capabilities of OpenAI AI models
+There are several categories of capabilities found in OpenAI AI models, three of these include:
+
+Capability	Examples
+Generating natural language	Such as: summarizing complex text for different reading levels, suggesting alternative wording for sentences, and much more
+Generating code	Such as: translating code from one programming language into another, identifying and troubleshooting bugs in code, and much more
+Generating images	Such as: generating images for publications from text descriptions and much more.
+
+
+What is generative AI
+Completed
+100 XP
+3 minutes
+OpenAI makes its AI models available to developers to build powerful software applications, such as ChatGPT. There are tons of other examples of OpenAI applications on the OpenAI site, ranging from practical, such as generating text from code, to purely entertaining, such as making up scary stories.
+
+Let's identify where OpenAI models fit into the AI landscape.
+
+Artificial Intelligence imitates human behavior by relying on machines to learn and execute tasks without explicit directions on what to output.
+Machine learning algorithms take in data like weather conditions and fit models to the data, to make predictions like how much money a store might make in a given day.
+Deep learning models use layers of algorithms in the form of artificial neural networks to return results for more complex use cases. Many Azure AI services are built on deep learning models. You can check out this article to learn more about the difference between machine learning and deep learning.
+Generative AI models can produce new content based on what is described in the input. The OpenAI models are a collection of generative AI models that can produce language, code, and images.
+Next you'll learn how Azure OpenAI gives users the ability to combine Azure's enterprise-grade solutions with many of OpenAI's same generative AI models.
+
+Describe Azure OpenAI
+Completed
+100 XP
+5 minutes
+Microsoft has partnered with OpenAI to deliver on three main goals:
+
+To utilize Azure's infrastructure, including security, compliance, and regional availability, to help users build enterprise-grade applications.
+To deploy OpenAI AI model capabilities across Microsoft products, including and beyond Azure AI products.
+To use Azure to power all of OpenAI's workloads.
+Introduction to Azure OpenAI Service
+Azure OpenAI Service is a result of the partnership between Microsoft and OpenAI. The service combines Azure's enterprise-grade capabilities with OpenAI's generative AI model capabilities.
+
+Azure OpenAI is available for Azure users and consists of four components:
+
+Pre-trained generative AI models
+Customization capabilities; the ability to fine-tune AI models with your own data
+Built-in tools to detect and mitigate harmful use cases so users can implement AI responsibly
+Enterprise-grade security with role-based access control (RBAC) and private networks
+Using Azure OpenAI allows you to transition between your work with Azure services and OpenAI, while utilizing Azure's private networking, regional availability, and responsible AI content filtering.
+
+Understand Azure OpenAI workloads
+Azure OpenAI supports many common AI workloads and solves for some new ones.
+
+Common AI workloads include machine learning, computer vision, natural language processing, conversational AI, anomaly detection, and knowledge mining.
+
+Other AI workloads Azure OpenAI supports can be categorized by tasks they support:
+
+Generating Natural Language
+Text completion: generate and edit text
+Embeddings: search, classify, and compare text
+Generating Code: generate, edit, and explain code
+Generating Images: generate and edit images
+Azure OpenAI's relationship to Azure AI services
+ Note
+
+As of July 2023, Azure AI services encompass all of what were previously known as Cognitive Services and Azure Applied AI Services.
+
+Azure AI services are tools for solving AI workloads. The services you choose to use depend on what you need to accomplish. In particular, there are several overlapping capabilities between Azure AI Language service and Azure OpenAI Service, such as translation, sentiment analysis, and keyword extraction.
+
+While there's no strict guidance on when to use a particular service, Azure AI Language service can be used for widely known use-cases that require minimal tuning (the process of optimizing a model's performance). Azure OpenAI Service may be more beneficial for use-cases that require highly customized generative models, or for exploratory research.
+
+ Note
+
+Pricing is different for Azure OpenAI and Azure AI Language service. Learn more here.
+
+When making business decisions about what type of model to use, it's important to understand how time and compute needs factor into machine learning training. In order to produce an effective machine learning model, the model needs to be trained with a substantial amount of cleaned data. The 'learning' portion of training requires a computer to identify an algorithm that best fits the data. The complexity of the task the model needs to solve for and the desired level of model performance all factor into the time required to run through possible solutions for a best fit algorithm.
+
+

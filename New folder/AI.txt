@@ -1,0 +1,173 @@
+What is AI?
+Simply put, AI is the creation of software that imitates human behaviors and capabilities. Key workloads include:
+
+Machine learning - This is often the foundation for an AI system, and is the way we "teach" a computer model to make predictions and draw conclusions from data.
+Anomaly detection - The capability to automatically detect errors or unusual activity in a system.
+Computer vision - The capability of software to interpret the world visually through cameras, video, and images.
+Natural language processing - The capability for a computer to interpret written or spoken language, and respond in kind.
+Knowledge mining - The capability to extract information from large volumes of often unstructured data to create a searchable knowledge store.
+
+
+
+Machine Learning is the foundation for most AI solutions.
+
+Let's start by looking at a real-world example of how machine learning can be used to solve a difficult problem.
+
+Sustainable farming techniques are essential to maximize food production while protecting a fragile environment. The Yield, an agricultural technology company based in Australia, uses sensors, data, and machine learning to help farmers make informed decisions related to weather, soil, and plant conditions.
+How machine learning works
+So how do machines learn?
+
+The answer is, from data. In today's world, we create huge volumes of data as we go about our everyday lives. From the text messages, emails, and social media posts we send to the photographs and videos we take on our phones, we generate massive amounts of information. More data still is created by millions of sensors in our homes, cars, cities, public transport infrastructure, and factories.
+
+Data scientists can use all of that data to train machine learning models that can make predictions and inferences based on the relationships they find in the data.
+
+For example, suppose an environmental conservation organization wants volunteers to identify and catalog different species of wildflower using a phone app. The following animation shows how machine learning can be used to enable this scenario.
+
+Machine Learning
+
+A team of botanists and scientists collect data on wildflower samples.
+The team labels the samples with the correct species.
+The labeled data is processed using an algorithm that finds relationships between the features of the samples and the labeled species.
+The results of the algorithm are encapsulated in a model.
+When new samples are found by volunteers, the model can identify the correct species label.
+Machine learning in Microsoft Azure
+Microsoft Azure provides the Azure Machine Learning service - a cloud-based platform for creating, managing, and publishing machine learning models. Azure Machine Learning provides the following features and capabilities:
+
+Feature	Capability
+Automated machine learning	This feature enables non-experts to quickly create an effective machine learning model from data.
+Azure Machine Learning designer	A graphical interface enabling no-code development of machine learning solutions.
+Data and compute management	Cloud-based data storage and compute resources that professional data scientists can use to run data experiment code at scale.
+Pipelines	Data scientists, software engineers, and IT operations professionals can define pipelines to orchestrate model training, deployment, and management tasks.
+
+
+Understand computer vision
+Completed
+100 XP
+3 minutes
+Computer Vision is an area of AI that deals with visual processing. Let's explore some of the possibilities that computer vision brings.
+
+The Seeing AI app is a great example of the power of computer vision. Designed for the blind and low vision community, the Seeing AI app harnesses the power of AI to open up the visual world and describe nearby people, text and objects.
+
+View the following video to learn more about Seeing AI.
+
+
+To find out more, check out the Seeing AI web page.
+
+Computer Vision models and capabilities
+Most computer vision solutions are based on machine learning models that can be applied to visual input from cameras, videos, or images. The following table describes common computer vision tasks.
+
+Task	Description
+Image classification	An image of a taxi with the label "Taxi"
+Image classification involves training a machine learning model to classify images based on their contents. For example, in a traffic monitoring solution you might use an image classification model to classify images based on the type of vehicle they contain, such as taxis, buses, cyclists, and so on.
+Object detection	An image of a street with buses, cars, and cyclists identified and highlighted with a bounding box
+Object detection machine learning models are trained to classify individual objects within an image, and identify their location with a bounding box. For example, a traffic monitoring solution might use object detection to identify the location of different classes of vehicle.
+Semantic segmentation	An image of a street with the pixels belonging to buses, cars, and cyclists identified
+Semantic segmentation is an advanced machine learning technique in which individual pixels in the image are classified according to the object to which they belong. For example, a traffic monitoring solution might overlay traffic images with "mask" layers to highlight different vehicles using specific colors.
+Image analysis	An image of a person with a dog on a street and the caption "A person with a dog on a street"
+You can create solutions that combine machine learning models with advanced image analysis techniques to extract information from images, including "tags" that could help catalog the image or even descriptive captions that summarize the scene shown in the image.
+Face detection, analysis, and recognition	An image of multiple people on a city street with their faces highlighted
+Face detection is a specialized form of object detection that locates human faces in an image. This can be combined with classification and facial geometry analysis techniques to recognize individuals based on their facial features.
+Optical character recognition (OCR)	An image of a building with the sign "Toronto Dominion Bank", which is highlighted
+Optical character recognition is a technique used to detect and read text in images. You can use OCR to read text in photographs (for example, road signs or store fronts) or to extract information from scanned documents such as letters, invoices, or forms.
+Computer vision services in Microsoft Azure
+Microsoft Azure provides the following Azure AI services to help you create computer vision solutions:
+
+Service	Capabilities
+Azure AI Vision	You can use this service to analyze images and video, and extract descriptions, tags, objects, and text.
+Azure AI Custom Vision	Use this service to train custom image classification and object detection models using your own images.
+Azure AI Face	The Azure AI Face service enables you to build face detection and facial recognition solutions.
+Azure AI Document Intelligence	Use this service to extract information from scanned forms and documents.
+
+
+
+
+Understand natural language processing
+Completed
+100 XP
+3 minutes
+Natural language processing (NLP) is the area of AI that deals with creating software that understands written and spoken language.
+
+NLP enables you to create software that can:
+
+Analyze and interpret text in documents, email messages, and other sources.
+Interpret spoken language, and synthesize speech responses.
+Automatically translate spoken or written phrases between languages.
+Interpret commands and determine appropriate actions.
+For example, Starship Commander is a virtual reality (VR) game from Human Interact that takes place in a science fiction world. The game uses natural language processing to enable players to control the narrative and interact with in-game characters and starship systems.
+
+Watch the following video to learn more.
+
+
+Natural language processing in Microsoft Azure
+In Microsoft Azure, you can use the following Azure AI services to build natural language processing solutions:
+
+Service	Capabilities
+Azure AI Language	Use this service to access features for understanding and analyzing text, training language models that can understand spoken or text-based commands, and building intelligent applications.
+Azure AI Translator	Use this service to translate text between more than 60 languages.
+Azure AI Speech	Use this service to recognize and synthesize speech, and to translate spoken languages.
+Azure AI Bot Service	This service provides a platform for conversational AI, the capability of a software "agent" to participate in a conversation. Developers can use the Bot Framework to create a bot and manage it with Azure Bot Service - integrating back-end services like Language, and connecting to channels for web chat, email, Microsoft Teams, and others.
+
+
+Understand knowledge mining
+Completed
+100 XP
+3 minutes
+Knowledge mining is the term used to describe solutions that involve extracting information from large volumes of often unstructured data to create a searchable knowledge store.
+
+Knowledge mining in Microsoft Azure
+One of these knowledge mining solutions is Azure Cognitive Search, a private, enterprise, search solution that has tools for building indexes. The indexes can then be used for internal only use, or to enable searchable content on public facing internet assets.
+
+Azure Cognitive Search can utilize the built-in AI capabilities of Azure AI services such as image processing, content extraction, and natural language processing to perform knowledge mining of documents. The product's AI capabilities makes it possible to index previously unsearchable documents and to extract and surface insights from large amounts of data quickly.
+
+Understand Responsible AI
+Completed
+100 XP
+10 minutes
+At Microsoft, AI software development is guided by a set of six principles, designed to ensure that AI applications provide amazing solutions to difficult problems without any unintended negative consequences.
+
+Fairness
+AI systems should treat all people fairly. For example, suppose you create a machine learning model to support a loan approval application for a bank. The model should predict whether the loan should be approved or denied without bias. This bias could be based on gender, ethnicity, or other factors that result in an unfair advantage or disadvantage to specific groups of applicants.
+
+Azure Machine Learning includes the capability to interpret models and quantify the extent to which each feature of the data influences the model's prediction. This capability helps data scientists and developers identify and mitigate bias in the model.
+
+Another example is Microsoft's implementation of Responsible AI with the Face service, which retires facial recognition capabilities that can be used to try to infer emotional states and identity attributes. These capabilities, if misused, can subject people to stereotyping, discrimination or unfair denial of services.
+
+For more details about considerations for fairness, watch the following video.
+
+
+Reliability and safety
+AI systems should perform reliably and safely. For example, consider an AI-based software system for an autonomous vehicle; or a machine learning model that diagnoses patient symptoms and recommends prescriptions. Unreliability in these kinds of systems can result in substantial risk to human life.
+
+AI-based software application development must be subjected to rigorous testing and deployment management processes to ensure that they work as expected before release.
+
+For more information about considerations for reliability and safety, watch the following video.
+
+
+Privacy and security
+AI systems should be secure and respect privacy. The machine learning models on which AI systems are based rely on large volumes of data, which may contain personal details that must be kept private. Even after the models are trained and the system is in production, privacy and security need to be considered. As the system uses new data to make predictions or take action, both the data and decisions made from the data may be subject to privacy or security concerns.
+
+For more details about considerations for privacy and security, watch the following video.
+
+
+Inclusiveness
+AI systems should empower everyone and engage people. AI should bring benefits to all parts of society, regardless of physical ability, gender, sexual orientation, ethnicity, or other factors.
+
+For more details about considerations for inclusiveness, watch the following video.
+
+
+Transparency
+AI systems should be understandable. Users should be made fully aware of the purpose of the system, how it works, and what limitations may be expected.
+
+For more details about considerations for transparency, watch the following video.
+
+
+Accountability
+People should be accountable for AI systems. Designers and developers of AI-based solutions should work within a framework of governance and organizational principles that ensure the solution meets ethical and legal standards that are clearly defined.
+
+For more details about considerations for accountability, watch the following video.
+
+
+The principles of responsible AI can help you understand some of the challenges facing developers as they try to create ethical AI solutions.
+
+
+

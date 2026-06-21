@@ -1,0 +1,95 @@
+'use strict';
+
+const fs = require('fs');
+
+process.stdin.resume();
+process.stdin.setEncoding("ascii");
+let inputString = "";
+let currentLine = 0;
+
+process.stdin.on("data", function (chunk) {
+    inputString += chunk;
+});
+process.stdin.on("end", function () {
+    inputString = inputString.split('\n');
+    main();
+});
+
+function readLine() {
+  return inputString[currentLine++];
+}
+
+class User {
+    constructor(username) {
+        this.name = username
+    }
+    
+    getUsername () {
+        return this.name
+    }
+    
+    setUsername(userName) {
+        this.name = userName
+    }
+}
+
+class ChatUser extends User {
+    constructor(userName) {
+        super(userName)
+        this.count = 0
+    }
+    
+    giveWarning() {
+        let count = this.count + 1
+        this.count = count
+    }
+    
+    getWarningCount() {
+        return this.count
+    }
+}
+
+
+function main() {
+    const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
+    
+    const initialUsername = readLine().trim();
+    const chatUserObj = new ChatUser(initialUsername);
+    
+    let numberOfOperations = parseInt(readLine().trim());
+    while (numberOfOperations-- > 0) {
+        const inputs = readLine().trim().split(' ');
+        const operation = inputs[0];
+        const username = inputs[1];
+
+        switch(operation) {
+            case 'GiveWarning':
+                chatUserObj.giveWarning();
+                break;
+            case 'SetName':
+                chatUserObj.setUsername(username);
+                break;
+            default:
+                break;
+        }
+    }
+    ws.write(`User ${chatUserObj.getUsername()} has a warning count of ${chatUserObj.getWarningCount()}\n`);
+    ws.write(`ChatUser extends User: ${(chatUserObj instanceof User).toString()}`);
+    ws.end();
+}
+
+
+put (stdin)
+10000
+3
+Debit 1000
+Credit 1000
+GetBalance
+Your Output (stdout)
+User 10000 has a warning count of 0
+ChatUser extends User: true
+Expected Output
+Account created with initial balance of 10000
+1000 debited
+1000 credited
+Current balance is 10000

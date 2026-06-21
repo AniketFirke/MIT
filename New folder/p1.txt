@@ -1,0 +1,99 @@
+In database management, cardinality plays an important role. Here cardinality represents the number of times an entity of an entity set participates in a relationship set. Or we can say that the cardinality of a relationship is the number of tuples (rows) in a relationship. Types of cardinality in between tables are:
+
+one-to-one
+one-to-many
+many-to-one
+many-to-many
+Mapping Cardinalities
+
+In a database, the mapping cardinality or cardinality ratio means to denote the number of entities to which another entity can be linked through a certain relation set. Mapping cardinality is most useful in describing binary relation sets, although they can contribute to the description of relation sets containing more than two entity sets. Here, we will focus only on binary relation sets means we will find the relation between entity sets A and B for the set R.
+
+
+Composite Attribute:
+Composite attributes are those that are made up of the composition of more than one attribute. When any attribute can be divided further into more sub-attributes, then that attribute is called a composite attribute.
+
+For example, in a student table, we have attributes of student names that can be further broken down into first name, middle name, and last name. So the student name will be a composite attribute.
+
+Another example from a personal detail table would be the attribute of address. The address can be divided into a street, area, district, and state.
+
+Derived Attribute:
+Derived attributes are also called stored attributes. When one attribute can be derived from the other attribute, then it is called a derived attribute. We can do some calculations on normal attributes and create derived attributes.
+
+For example, the age of a student can be a derived attribute because we can get it by the DOB of the student.
+
+Another example can be of working experience, which can be obtained by the date of joining of an employee.
+
+In the ER diagram, we represent the derived attributes by a dotted oval shape.
+
+
+Attributes
+In DBMS, we have entities, and each entity contains some property about their behavior which is also called the attribute. In relational databases, we have tables, and each column contains some entity that has some attributes, so all the entries for that column should strictly follow the attribute of the entity. Entities define the characteristic property of the attributes.
+
+Following is the Attributes of an Entity
+
+Simple Attribute:
+It is also known as atomic attributes. When an attribute cannot be divided further, then it is called a simple attribute.
+
+For example, in a student table, the branch attribute cannot be further divided. It is called a simple or atomic attribute because it contains only a single value that cannot be broken further.
+
+Composite Attribute:
+Composite attributes are those that are made up of the composition of more than one attribute. When any attribute can be divided further into more sub-attributes, then that attribute is called a composite attribute.
+
+For example, in a student table, we have attributes of student names that can be further broken down into first name, middle name, and last name. So the student name will be a composite attribute.
+
+Another example from a personal detail table would be the attribute of address. The address can be divided into a street, area, district, and state.
+
+Single-valued Attribute:
+Those attributes which can have exactly one value are known as single valued attributes. They contain singular values, so more than one value is not allowed.
+
+For example, the DOB of a student can be a single valued attribute. Another example is gender because one person can have only one gender.
+
+Multi-valued Attribute:
+Those attributes which can have more than one entry or which contain more than one value are called multi valued attributes.
+
+In the Entity Relationship (ER) diagram, we represent the multi valued attribute by double oval representation.
+
+For example, one person can have more than one phone number, so that it would be a multi valued attribute. Another example is the hobbies of a person because one can have more than one hobby.
+
+Derived Attribute:
+Derived attributes are also called stored attributes. When one attribute can be derived from the other attribute, then it is called a derived attribute. We can do some calculations on normal attributes and create derived attributes.
+
+For example, the age of a student can be a derived attribute because we can get it by the DOB of the student.
+
+Another example can be of working experience, which can be obtained by the date of joining of an employee.
+
+In the ER diagram, we represent the derived attributes by a dotted oval shape.
+
+Complex Attribute:
+If any attribute has the combining property of multi values and composite attributes, then it is called a complex attribute. It means if one attribute is made up of more than one attribute and each attribute can have more than one value, then it is called a complex attribute.
+
+
+For example, if a person has more than one office and each office has an address made from a street number and city. So the address is a composite attribute, and offices are multi valued attributes, So combing them is called complex attributes.
+
+Key Attribute:
+Those attributes which can be identified uniquely in the relational table are called key attributes.
+
+For example, a student is a unique attribute.
+
+
+Integrity Constraints
+
+Integrity constraints are a set of rules. It is used to maintain the quality of information.
+Integrity constraints ensure that the data insertion, updating, and other processes have to be performed in such a way that data integrity is not affected.
+Thus, integrity constraint is used to guard against accidental damage to the database.
+
+What is Data abstraction in Database Management System?
+The database system contains intricate data structures and relations. The developers keep away the complex data from the user and remove the complications so that the user can comfortably access data in the database and can only access the data they want, which is done with the help of data abstraction.
+
+The main purpose of data abstraction is to hide irrelevant data and provide an abstract view of the data. With the help of data abstraction, developers hide irrelevant data from the user and provide them the relevant data. By doing this, users can access the data without any hassle, and the system will also work efficiently.
+
+In DBMS, data abstraction is performed in layers which means there are levels of data abstraction in DBMS that we will further study in this article. Based on these levels, the database management system is designed.
+
+
+Each file defines and manages its own data, making it difficult to protect a file under the file system. It is also very difficult to store and retrieve data efficiently.
+Duplicate data may occur in different files, leading to data redundancy.
+Various copies of the same data may contain different values, leading to inconsistency.
+Accessing data in a desired or efficient way is not easy, leading to accessing anomalies.
+Poor data integrity and security.
+Atomicity problem.
+Lack of storage and access standards.
