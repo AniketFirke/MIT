@@ -1,0 +1,220 @@
+<?php 
+// Numeric/ index arrays
+ $cars = array('Mecedes Benz', 'Hilux', 'Highlander', 'Hummer', 'Limozien’); 
+var_dump($cars);
+ ?> 
+
+From the code above I have a variable of  $cars which stores an array of 5 elements. The var_dump($cars) keyword above will show us the total number of elements we have in the array, the index number of each array, and also the length of each element in the array.
+You can also chose to use the echo( ) keyword, but in my case I prefer to use var_dump( ) because it gives a more detailed explanation of the results we get.
+
+<?php
+ $numbers = array('8', '20', '40', '58', '88', '200', '400', '500’); 
+var_dump ($numbers [4]); 
+?> 
+
+The code above follows the same pattern as our definition of an array, which states that it counts from zero. We want to display the element with the index of 4. Counting from 0 to 4, we can see that 88 falls under index 4, indicating that 88 is the number we're seeking and that will be displayed to the browser. 
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+An associative array is a type of array where the key has its own value. In an associative array, we make use of key and value.
+
+Keys are descriptive captions of the array element used to access the value of the array. And value is the value assigned to the array element.
+
+There are situations where you shouldn't use the numeric/indexed array, such as:
+
+When you want to store the age of different students along with their names.
+When you want to record the salaries of your employees.
+When you want to store the score of a student in different subjects
+and so on.  
+
+<?php 
+$student_age = array ( 
+'Scott_Mcall' => 17, 
+'Stalenski' => 18,
+ 'Lydia' => 16,
+ 'Allision' => 17, ); 
+echo $student_age ['Scott_Mcall’]; 
+//this code will display the age of Scot_Mcall as 17 
+echo $student_age ['Stalenski’]; 
+//this code will display the age of stalenski as 18 
+echo $student_age ['Lydia’]; 
+//this code will display the age of Lydia as 16 
+echo $student_age ['Allision’]; 
+//this code will display the age of Allision as 17 
+?> 
+
+The code above is an example of an associative array. The keys of the array are scott_Mcall, Stalenski, Lydia, Allision, and we used them to assign the age to each student. The values of the array are 17, 18, 16, and 17.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+You can think of a multidimensional array as an array of arrays. This means that every element in the array holds a sub-array within it. In general, multidimensional arrays allow you to store multiple arrays in a single variable.
+
+Suppose we want to store the Names, Registration Numbers, and Emails of some of the staff working in a particular company. We can use multidimensional arrays to archive this.
+
+ an array starts counting from index 0. The code above is an example of a multidimensional array because it contains more than one array (an array of arrays) with one single variable of $staff.
+
+<?php 
+$Staffs = [ 
+	[ 'Name' => 'Derek Emmanuel’, 
+	  ‘Reg_No' => 'FE/30304’, 
+	  'Email' => 'derekemmanuel@gmail.com’ 
+	],
+ 	[ 
+	  'Name' => 'Rubecca Michealson’, 
+	  'Reg_No' => 'FE/20003’, 
+	  'Email' => 'rmichealsongmail.com’
+	],
+ 	[ 
+	  'Name' => 'Frank Castle’,
+ 	  'Reg_No' => 'FE/10002’, 
+	  'Email' => 'fcastle86@gmail.com’ 
+	]
+              ]; 
+echo $Staffs [2] ['Email']; // This displays the email of the last staff which is fcastle86@gmail.com 
+echo $staffs [0] ['Name']; //This displays the Name of the staff in the first array (index 0) which is Derek Emmanuel 
+// you can access the information of any staff you wish to by using echo $(variable name) [index number] ['array element key’]
+. ?> 
+
+
+The echo $staff [2] [‘Email’] displays the email of the staff that falls into the index of 2. In our case it will display fcastle86@gmail.com.
+
+If I want to access the Email of the staff in the first array, we'll do the following:
+
+echo $staff [0] ['Email'];
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+echo strlen("Hello world!");
+?> 
+ 
+</body>
+</html>
+
+\--------------------------------------/
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+echo str_word_count("Hello world!");
+?> 
+ 
+</body>
+</html>
+
+\---------------------------------------/
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+echo strrev("Hello world!");
+?> 
+ 
+</body>
+</html>
+
+\--------------------------------------/
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+echo str_replace("world", "Dolly", "Hello world!");
+?> 
+ 
+</body>
+</html>
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<body>
+<?php
+functionwelcMsg()
+{
+echo "Hello welcome!";
+}
+welcMsg();
+?>
+</body>
+</html>
+a function called "welcMsg()" is created. The beginning of the function code is indicated by the opening curly bracket {, and the end of the function is indicated by the closing curly bracket }. The function says "Hello welcome!"; write the function's name in brackets () to invoke it.
+
+\--------------------------------------------------------/
+<!DOCTYPE html>
+<html>
+<body>
+<?php
+functionStudentsName($firstname)
+{
+echo "$firstname<br>";
+}
+StudentsName("Janani");
+StudentsName("Helen");
+StudentsName("Stella");
+StudentsName("Kamal");
+StudentsName("Babu");
+?>
+</body>
+</html>
+
+A function with only one argument ($fname) is used in the following example. When we call the StudentsName() function, we also transfer a name (for example, Janani) used within the function to generate several different first names but the same last name.
+
+\--------------------------------------------------------/
+
+<!DOCTYPE html>
+<html>
+<body>
+<?php
+functionaddition(&$val) {
+  $val += 10;
+}
+$number =5;
+addition($number);
+echo $number;
+?>
+</body>
+</html> 
+
+
+\--------------------------------------------------------/
+<?php
+function add(int $s, int $t) {
+return $s + $t;
+}
+echo add(5, "8 days");
+// since strict is NOT enabled, "8 days" is changed to int(8), and it will return 13.
+?>
+\--------------------------------------------------------/
+<?php
+function circle($r){ 
+return 3.14*$r*$r; 
+} 
+echo "Area of circle is: ".circle(3); 
+?>
+\--------------------------------------------------------/
+<?php declare(strict_types=1); // strict requirement ?>
+<!DOCTYPE html>
+<html>
+<body>
+<?php
+functionsetval(int $a = 5) {
+echo "The value is : $a <br>";
+}
+setval(50);
+setval();
+setval(13);
+setval(40);
+?>
+</body>
+</html>
+\--------------------------------------------------------/
+

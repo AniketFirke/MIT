@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+</body>
+</html>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+
+<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
+
+</body>
+</html> 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+onClick Event Handler 
+
+<html>
+<head>
+<title>onClick Event Handler Example</title> <script type="text/javascript">
+function warnUser() {
+return confirm ("Are you a student?");
+}
+</script>
+</head>
+<body>
+<a href="ref.html" onClick="return warnUser ()">
+<!--
+If onClick event handler returns false, the link
+is not followed.
+-->
+Students access only</a>
+</body>
+</html>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+onSubmit Event Handler Example
+<html>
+<head>
+<title>onSubmit Event Handler Example</title>
+<script type="text/javascript">
+function validate() {
+// If everything is ok, return true // Otherwise return false
+</script>
+</head>
+<body>
+<form action="MessageBoard" method="POST" onSubmit="return validate();"
+</form>
+</body>
+</html>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<html>
+<head>
+<title>onerror event handler example</title>
+<script type="text/javascript"> function errorHandler() {
+alert("Error Ourred!");
+}
+// JavaScript is case sensitive // Don't write onerror!
+window.onError = errorHandler;
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+document.write("Hello there;
+</script>
+</body> 
+</html>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+echo "Today is " . date("Y/m/d") . "<br>";
+echo "Today is " . date("Y.m.d") . "<br>";
+echo "Today is " . date("Y-m-d") . "<br>";
+echo "Today is " . date("l");
+?>
+
+</body>
+</html>
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<html>
+<body>
+
+<form action="welcome.php" method="post">
+Name: <input type="text" name="name"><br>
+E-mail: <input type="text" name="email"><br>
+<input type="submit">
+</form>
+
+</body>
+</html>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PHP Form Validation
+
+<!DOCTYPE HTML>  
+<html>
+<head>
+</head>
+<body>  
+
+<?php
+// define variables and set to empty values
+$name = $email = $gender = $comment = $website = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = test_input($_POST["name"]);
+  $email = test_input($_POST["email"]);
+  $website = test_input($_POST["website"]);
+  $comment = test_input($_POST["comment"]);
+  $gender = test_input($_POST["gender"]);
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+
+<h2>PHP Form Validation Example</h2>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+  Name: <input type="text" name="name">
+  <br><br>
+  E-mail: <input type="text" name="email">
+  <br><br>
+  Website: <input type="text" name="website">
+  <br><br>
+  Comment: <textarea name="comment" rows="5" cols="40"></textarea>
+  <br><br>
+  Gender:
+  <input type="radio" name="gender" value="female">Female
+  <input type="radio" name="gender" value="male">Male
+  <input type="radio" name="gender" value="other">Other
+  <br><br>
+  <input type="submit" name="submit" value="Submit">  
+</form>
+
+<?php
+echo "<h2>Your Input:</h2>";
+echo $name;
+echo "<br>";
+echo $email;
+echo "<br>";
+echo $website;
+echo "<br>";
+echo $comment;
+echo "<br>";
+echo $gender;
+?>
+
+</body>
+</html>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PHP - Required 
+
+<!DOCTYPE HTML>  
+<html>
+<head>
+<style>
+.error {color: #FF0000;}
+</style>
+</head>
+<body>  
+
+<?php
+// define variables and set to empty values
+$nameErr = $emailErr = $genderErr = $websiteErr = "";
+$name = $email = $gender = $comment = $website = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameErr = "Name is required";
+  } else {
+    $name = test_input($_POST["name"]);
+  }
+  
+  if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+  } else {
+    $email = test_input($_POST["email"]);
+  }
+    
+  if (empty($_POST["website"])) {
+    $website = "";
+  } else {
+    $website = test_input($_POST["website"]);
+  }
+
+  if (empty($_POST["comment"])) {
+    $comment = "";
+  } else {
+    $comment = test_input($_POST["comment"]);
+  }
+
+  if (empty($_POST["gender"])) {
+    $genderErr = "Gender is required";
+  } else {
+    $gender = test_input($_POST["gender"]);
+  }
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+
+<h2>PHP Form Validation Example</h2>
+<p><span class="error">* required field</span></p>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+  Name: <input type="text" name="name">
+  <span class="error">* <?php echo $nameErr;?></span>
+  <br><br>
+  E-mail: <input type="text" name="email">
+  <span class="error">* <?php echo $emailErr;?></span>
+  <br><br>
+  Website: <input type="text" name="website">
+  <span class="error"><?php echo $websiteErr;?></span>
+  <br><br>
+  Comment: <textarea name="comment" rows="5" cols="40"></textarea>
+  <br><br>
+  Gender:
+  <input type="radio" name="gender" value="female">Female
+  <input type="radio" name="gender" value="male">Male
+  <input type="radio" name="gender" value="other">Other
+  <span class="error">* <?php echo $genderErr;?></span>
+  <br><br>
+  <input type="submit" name="submit" value="Submit">  
+</form>
+
+<?php
+echo "<h2>Your Input:</h2>";
+echo $name;
+echo "<br>";
+echo $email;
+echo "<br>";
+echo $website;
+echo "<br>";
+echo $comment;
+echo "<br>";
+echo $gender;
+?>
+
+</body>
+</html>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------

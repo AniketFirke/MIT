@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>resume</title>
+</head>
+<body>
+  <div class="container">
+    <heade>
+      <img src="" alt=""width="250px">
+    </heade>
+    <div class="intro">
+      <h1>Aniket Firke</h1>
+       <p>Thank you for giving me this apportunity to introduce my self my name ia Aniket Firke, I am from Aurangabad, I am currently pursuing my undergraduation in computer science and Technology in Btech, Now I would like to talk about my of address Engaon, Tal- Bodwad, Dist- Jalgaon</p>
+    </div>
+    <div class="education">
+      <h2>Education</h2>
+      <table>
+        <tr>
+          <th>Class</th>
+          <th>Percentage</th>
+          <th>Bord/Univercity</th>
+          <th>Passing Year</th>
+        </tr>
+        <tr>
+          <td>Xth</td>
+          <td>70.5%</td>
+          <td>State Board</td>
+          <td>2019</td>
+        </tr>
+        <tr>
+          <td>XII</td>
+          <td>89.50%</td>
+          <td>State Board</td>
+          <td>2021</td>
+        </tr>
+        <tr>
+          <td>UG</td>
+          <td>80.22%</td>
+          <td>BATU</td>
+          <td>2022</td>
+        </tr>
+      </table>
+      <div class="Skills">
+        <h2>Skills:</h2>
+        <ul>
+           <li>HTML</li>
+          <li>CSS</li>
+         <li>Web development</li>
+          <li>Basic C and c++</li>
+          <li>Basic Java</li>
+          <li>Leadership </li>
+          <li>Project Management</li>
+       </ul>
+      </div>
+      <div class="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+          <li>Travelling</li>
+          <li>Coding</li>
+          <li>Driving</li>
+          <li>Cooking</li>
+          <li>Watching movies </li> 
+        </ul>
+      </div>
+      <div class="contact">
+        <h2>Contact Information</h2>
+        <ul>
+          <li>MAIL:<a
+     href="mailto:firkeaniket621@.com">firkeaniket621@.com
+      </a></li
+        <li>Phone number: 9552547753</li> 
+          <li>Adress:Bodwad,Jalgaon</li>
+        </ul>
+      </div>
+      <div class="declaration">
+        <h2>Declaration</h2>
+        <p> solemny declare that all the above information is correct to the best of my knowledge and belief.</p>
+      </div>
+      <div class="getdate">
+        <p><b>Date:</b></p>
+        <div id="date"></div>
+      </div>
+      
+      <div class="gettime">
+        <p><b>Time: </b></p>
+        <div id="time"></div>
+      </div>
+      <div class="links">
+        <h2>Social Links</h2>
+        <a href="http//instagram.com/_its_me_ani_19k">
+        <img src="https://cdn.pixabay.com/photo/2016/08/09/17/52/instagram-1581266_1280.jpg"alt=""width="50px">
+        </a>
+        <a href="http//facebook.com/aniket firke">
+        <img src="https://image.similarpng.com/very-thumbnail/2020/04/Modern-paint-splash-faceboo-logo-png.png" alt=""width="50px">
+        </a>
+        <a href="http//snapchat.com/aniketfirke">
+          <img src="https://download.logo.wine/logo/Snapchat/Snapchat-Logo.wine.png" alt=""width="100px">
+        </a>
+        <a href="http//linkedin.com/aniket firke">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png" alt=""width="50px">
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</body>
+  <script>
+    var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    document.getElementById("date").innerHTML = date;
+    var time=     today.getHours()+':'+today.getMinutes()+":"+today.getSeconds();
+    docoument.getElementById("time").innerHTML = time;
+  </script>
+  
+</html>
+
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(11, 9, 9);
+}
+
+.container {
+  max-width: 750px;
+  margin: auto;
+  border: 5px solid  black;
+  background: #f1f3f1;
+  padding: 30px 90px 36px 90px;
+  font-family:"sans-serif";
+}
+
+header img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+table, th, td{
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 15px;
+  border-collapse: collapse;
+}
+
+li{
+  margin: top; 10px;
+}
+.intro h1 {
+  text-align: center;
+}
+
+.intro p{
+  padding-right: 30px;
+  text-align: center;
+  text-align: justify;
+}
+header {
+  padding:  28px 8px 28px;
+  background- color:#Afabff;
+}
+
+.links img{
+  margin-right: 30px;
+}
+
+.links {
+  margin-top: 20px;
+  text-aglin: center;
+  
+}
+  
