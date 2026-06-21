@@ -1,0 +1,176 @@
+
+* In Python, we have total 36 keywords. The list of keywords is 
+available in module "keyword'".
+
+import keyword
+print(keyword.kwlist)
+
+=========================================
+
+* In Python every function is an object. And function's name 
+is reference.
+* This is the reason, Python does not support method overloading.
+
+* In Python, we have a py-documentation ---> __doc__
+* This will give us any help/documentation related to any 
+function, module, class, library....
+
+For example:
+	print(print.__doc__)
+This will print documentation of print() function.
+
+	print(str.__doc__)
+This will print documentation of class str.
+
+============================================
+
+* We can check datatype of any entity, by using type().
+
+For example:
+--------------
+a  = 10
+print(type(a))
+
+a = 9.2
+print(type(a))
+
+* In Python, we don't have any primitive datatypes. All 
+datatypes are class names.
+
+==========================================
+
+* In Python, we have exactly 3 datatypes. (value based)
+	- int
+	- float
+	- bool (boolean) for True and False
+	- str
+
+* In Python, we have 4 data structures.
+	- list
+	- tuple
+	- set
+	- dict (dictionary)
+
+=================================
+
+* In Python, we don't have datatype "char". 
+* We can use single quotes or double quotes for String.
+
+===================================================
+
+a = 10
+b = 9.2
+print("Value of a is",a,"and b is",b)
+
+====================================================
+
+* To input a value in Python, we have input() function.
+* This function obtains and returns input value in form of 
+string. 
+* Therefore we have to parse input string into required datatype.
+* To parse, we have constructors of class.
+
+For example:
+-------------
+a = int(input())
+print(type(a))
+
+* Here, input() is taking input and returning as stirng.
+* The int() constructor is converting that string into "int"
+
+For example:
+-------------
+print("Enter age of student")
+a = int(input())
+
+if a>18:
+    print("Eligible for Voting")
+else:
+    print("Not eligible for Voting")
+
+===================================================
+
+* In Python, we have 
+
+	+	to perform addition
+	- 	to perform subtr
+	* 	to perform multiplication
+	/ 	(float division) to obtain floating point division
+	// 	(floor division) to obtain integer value of division
+	** 	to obtain power
+	%	to obtain remainder
+
+================================================
+
+a = 5
+b = 2
+
+c = a/b
+print(c)
+
+d = a//b
+print(d)
+
+=====================================================
+
+Q.1) Re-think about some important features of Python.
+Q.2) Re-think some important differences bewteen Java and Python
+Q.3) Re-think about compiled languages and interpreted language.s
+Q.4) Re-think about type() function.
+Q.5) Re-think about input-output function in Python.
+Q.6) Re-think about "builtins" module.
+Q.7) Differentiate between module and library.
+Q.8) Re-think about different datatypes of Python.
+Q.9) According to you, all Python datatypes are 
+	primitive datatypes (keywords) or non-primitive (class names)
+Q.10) Re-think about "keyword" module 
+Q.11) Python's memory management. 
+	(reference and object combination)
+	(simply assign object to reference, and interpreter 
+	will automatically assign datatype to reference)
+Q.12) "Python is dynamically datatyped language" Justify.
+
+=====================================================
+
+Program for Practice:
+----------------------
+1) Write a program to print "Hello all" message.
+2) Write a program to print "Hello all" message and "Hi all"
+messag":
+	- both in different lines
+	- both in same lines. (separte by YOUR-NAME)
+3) Write a program to delcare/initialize three different 
+references of different datatypes and print their values 
+along with short message.
+4) Write a program to delcare/initialize three different 
+references of different datatypes and print their datatypes 
+with short message.
+5) Write a program to accept one integer and one float 
+value from use and display them with short message.
+6) Write a program to print all keywords.
+(use module "keyword" and kwlist)
+
+
+7) Write a program to accept two integers from the user 
+and perform their addition.
+8) Write a program to accept one integer value from 
+the user and print it's sqare and cube.
+9) Write a program to accept 2 integers from the user and 
+perform all arithmetic operations on them.
+10) Write a program to accept marks of 5 subjects of a student 
+and print total marks and average marks.
+11) Write a program to accept total bill amount from the 
+user and print new bill amount after giving 15% discount.
+
+
+
+
+
+
+
+
+
+
+
+
+

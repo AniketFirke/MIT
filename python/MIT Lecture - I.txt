@@ -1,0 +1,49 @@
+
+* Every Python program is called as module. 
+* i.e. every (.py) file is a module.
+* Set of modules is called as library (package or API)
+
+==========================
+
+* Python is an interpreted language.
+* Python is a scripting language. It is not a structured language. 
+* A structured language means, in which execution of program is from function to function. 
+Therefore every prgoram we must need a function to begin the execution. 
+
+=========================================================
+
+* In Python, we have a module "builtins" which is by-default included in every Python program. 
+* Therefore we can directly use any function or class that available in "builtins" module.
+
+* Similarly, in Java we have "java.lang" package which is by-default included in every Java program. 
+* Therefore, we can directly use any class or interface that are available in "java.lang" package.
+
+===================================================================
+
+In Python, ASCII values are called as "ORDINAL" values. Universally, in every programming language, ASCII values are 
+same. 
+	A - Z	----> 65 to 90
+	a - z 	----> 97 to 122
+	0 - 9 	----> 48 to 57
+	sp.symbols  ----> all remaining from 0 to 127
+
+=============================================================
+
+* In Python, we don't have any keyword to declare constants.
+* In such high-level languages, there is no word like over-writing. 
+* In high-level languages, whatevery is in RHS of = is object. and whatevery is in LHS of = is reference. 
+* And in high-level lanagues, every object is anonnymous (no - name) Therefore we need a reference (on RHS) 
+that behaves as a name of object. 
+
+=========================================================================
+
+* The best difference between Java and Python is in reference's datatype.
+	- In Java, a reference strictly holds the datatype.
+	- In Python, a reference is variable with datatype. Whatevery value we assign to that reference, will be 
+	the datatype of reference.
+
+* Therefore, Python is a dynamically datatyped language. (it changes datatype of reference based on assigned object)
+* Java is a strictly datatyped language. (it does not change datatype of reference based on assigned value)
+
+========================================================================
+

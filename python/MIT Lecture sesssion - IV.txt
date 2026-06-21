@@ -1,0 +1,189 @@
+
+* Conver following C program into Python programs.
+printf("Enter a number");
+scanf("%d", &num);
+flag = 1;
+i = 2;
+while(i<num)
+{
+	if(num % i == 0)
+	{
+		flag = 2;
+		break;
+	}
+	i++;
+}
+if(flag==1)
+{
+	printf(Number is prime");
+}
+else
+{
+	printf("Number is not prime");
+}
+
+===============================
+
+2) Convert following C program into Python program.
+
+for(i=1; i<=5; i++)
+{
+	for(j=1; j<=i; j++)
+	{
+		printf(" * ");
+	}
+	printf("\n");
+}
+
+ANS
+
+i = 1
+while i<=5:
+    j = 1
+    while j<=i:
+        print("* ", end="  ")
+        j = j + 1
+    print()
+    i = i + 1
+
+=====================================
+
+3) Convert following C program into Python program.
+
+for(i=1; i<=5; i++)
+{
+	for(j=5; j>i; j--)
+	{
+		printf("  ");
+	}
+	for(k=1; k<=i; k++)
+	{
+		printf(" * ");
+	}
+	printf("\n");
+}
+
+ANS 
+
+
+i = 1
+while i<=5:
+    j = 5
+    while j>i:
+        print("  ", end="")
+        j = j - 1
+    k = 1
+    while k<=i:
+        print(" *  ", end="")
+        k = k + 1
+    print()
+    i = i + 1
+    
+=================================================
+
+for loop: (actually it is for-each loop)
+-------------------
+* Python's for-loop is actually to iterate on each element 
+of specified sequence/iterable/data-structure.
+
+* Syntax is:
+	
+	for ref in sequence:
+		statements
+		statements
+
+For example:
+--------------
+
+for a in "kaustubh":
+    print("refers to -", a)
+
+* Here reference 'a' will refer to each character of specified 
+string in each iteration.
+
+* for-each loop is readonly loop. 
+
+* For logical comfort, we prefer a library function range() 
+to iterate on some range of values.
+
+For example:
+-------------
+for a in range(1,10):
+    print(a)
+
+* Remember that, returntype of range() is a sequence. And 
+for-loop will iterate on returned answer. 
+
+========================================================
+========================================================
+
+* Python's data strucutres are also called as "sequences"
+ or "iterables"
+* Python has total 4 data structures.
+	- list
+	- tuple
+	- set
+	- dictionary 
+
+1) list
+---------
+* is specified with set of []
+* is dynamic and mutable data structure.
+* is object of class list.
+* allows indexing and allows indexing operator []
+* allows over-writing of elements by using indexing and 
+	indexing operator.
+* allows duplicate elements.
+* allows every Python object as list element.
+* maintains order of elements
+
+2) tuple
+---------
+* is specified with set of ()
+* is static and immutable data structure.
+* is object of class tuple
+* allows indexing and indexing operator.
+* But does not allow to over-write elements by using indexing 
+and indexing operator.
+* allows duplicate elements.
+* allows any Python object as element.
+* maintains order of elements.
+
+==========================================
+
+3. set
+-------
+* is dynamic and immutable 
+* is specified within set of {}
+* is object of class "set"
+* does not allow indexing and indexing operator.
+* Therefore does not allow over-writing of elements by 
+using indexing and indexing operator.
+* does not allow duplicate elements.
+* does not maintain order of elements.
+* allows only static entities as set elements.
+
+========================================================
+
+* static ----> of fixed size
+* dynamic ----> of variable size
+
+* mutable ---> allows to change
+* immutable ---> does not allow to change
+
+========================================================
+
+* Exercise questions:
+1) Declare one list with 5 elements and print entire list 
+and its type.
+2) Declare one tuple with 5 different elements and print 
+element present at index 0 and index 2.
+3) Declare one list and print type of element present at 
+index 3 and index 4.
+4) Declare a list having 5 float values. And print sum of 
+element present at index 2 and index 3 and index 4.
+5) Declare a list containing another list and its element. 
+6) Declare a tuple containing a list as its element.
+
+=========================================================
+

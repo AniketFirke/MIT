@@ -1,0 +1,174 @@
+
+* In Python, we don't have unary operators and ternary 
+operators. 
+* Every operator is binary operator.
+=============================================
+
+** In Python, any datatype does not have any maximum 
+length of criteria.
+* Any dynamic value can be stored.
+
+* In C:
+	int -32768 to +32767
+	long -2147483648 to +2147483647
+
+* Java
+	int  -2147483648 to +2147483647
+	long -9223372036854775807 to
+		+922372036855475807
+
+=============================
+
+* In Python, every memory-block/object has a unique ID.
+* This ID is like address of memory block (in C).
+* We can also print ID of memory block/object by using 
+id()
+
+For example:
+------------
+a = 10
+b = 25.66
+
+print(id(a))
+print(id(b))
+
+========================================
+
+* In C/C++/Java we write logical blocks and their body 
+in pair of { } .
+* Here in Python, we have to write body of logical blocks 
+in special format called as "ïndentation""
+* Indentation is ---> single or set of space(s).
+
+* As logical options, we have:
+	if statement
+	if else statement
+	else if statement
+* We don't have ternary operator (conditional operator) in 
+Python.
+
+To use if statement
+---------------------
+	if condition:
+		statements
+		statements
+
+
+To use if-else statement
+--------------------------
+	if condition:
+		statements
+		statements
+	else:
+		statements
+		statements	
+
+To use else-if statement
+-------------------------
+	if condition:
+		statements
+		statements
+	elif condition:
+		statements
+		statements
+	elif condition:
+		statements
+		statements
+	else:
+		statements
+		statements
+
+=======================================
+
+* In Python, we have logical operators.
+	and   ----> similar to &&
+	or    ----> similar to ||
+	not   ----> similar to !
+
+* all 3 are keywords.
+
+==================================================
+
+Basic exercise questions:
+1) Write a program to accept three integers and print YES if 
+their sum is greater than 100 else print NO.
+
+2) Write a program to accept two integers and print largest 
+of them.
+
+3) Write a program to accept a number from the user and 
+print whether it is positive or negative.
+
+4) Write a program to accept a number from the user 
+and print YES if it's last digit is 5; else print NO.
+
+print("Enter any number")
+a = int(input())
+b = a % 10
+if b==5:
+    print("YES")
+else:
+    print("NO")
+
+===================================
+* We are also allowed to use short-hand if-else statement.
+
+	true_part if condition else false_part
+
+For example:
+-------------
+print("YES") if b==5 else print("NO")
+
+=========================================
+=========================================
+
+* In Python, we have 2 loops.
+	- while loop
+	- for loop (actually for-each loop)
+
+* Here purpose and syntax of while loop is similar to 
+C/C++//Java.
+
+* To use while-loop, general syntax is:
+
+initialization
+while condition:
+	statements
+	statements
+	statements
+	step
+
+====================================
+
+1) Write a program to print 1 to 10 (use while loop)
+2) Write a program to print all the numbers from 10 to 1. 
+	(use while loop)
+3) Convert following C program into Python program:
+	
+printf("main area starts");
+i=1;
+while(i<=100)
+{
+	if(i%5==0)
+	{
+		printf("%d\t", i);
+	}
+	i++;
+}
+print("main area ends");
+
+4) Convert the following C program into Python program.
+n1 = 0;
+n2 = 1;
+i = 1;
+while(i<=10)
+{
+	n3 = n1 + n2;
+	printf("%d\t", n3);
+	n1 = n2
+	n2 = n3
+	i++;
+}
+
+===================================
+
